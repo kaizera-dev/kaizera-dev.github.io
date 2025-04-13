@@ -1,2 +1,2 @@
 # kaizera-dev.github.io
-A portfolio
+A portfolio for Alphonse Kwizera
