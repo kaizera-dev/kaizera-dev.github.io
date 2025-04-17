@@ -9,113 +9,101 @@
   </head>
   <body>
     <header>
-      <h1 class="name-text"></h1>
-      <strong class="role-text"></strong>
-      <strong class="course-text"></strong>
-      <strong class="scroll-text"></strong>
+      <h1 class="name-text">Alphonse Kwizera</h1>
+      <strong class="role-text">Statistical Programmer | BSc Mathematics Student</strong>
+      <strong class="course-text">
+        <nav>
+          <a href="#about">About Me</a> | 
+          <a href="#education">Education</a> | 
+          <a href="#experience">Experience</a> | 
+          <a href="#skills">Skills</a> | 
+          <a href="#projects">Projects</a> | 
+          <a href="#contact">Contact Me</a>
+        </nav>
+      </strong>
+      <strong class="scroll-text">Scroll (↓) for more</strong>
     </header>
     <hr style="border: 1px solid #ffffff; margin: 0;">
     <div class="container">
-
-      <section class="about">
+      <section id="about" class="card">
         <h2>About Me</h2>
-        <p>Welcome to my portfolio! I am currently doing a placement year at UCB as a statistical programmer,
-           where I am gaining valuable experience in the pharmaceutical industry, mainly using the R programming language. Most notably, learning the 
-           ins and outs of the high regulatory standard, and familiarising myself with the process of getting a drug on the market.</p>
-       <p> I will be returning to the University of Reading to complete my degree in Mathematics. I was awarded
-           the Departmental Achievement Award in both my first and second years for placing within the top 4 
-           students in my mathematics cohort—recognising consistent academic excellence across core mathematical and statistical modules.</p>
+        <p>
+          Welcome to my portfolio! I’m a statistical programming placement student at UCB, where I contribute to clinical research by creating tools that improve how results are shared and understood. 
+          Working in the highly regulated pharmaceutical environment, I’ve gained practical experience with statistical reporting and stakeholder-focused deliverables.
+        </p>
+
+        <p></p>
+          One area I’ve especially focused on is building Shiny applications, both internally and in personal projects. These apps make data 
+          interactive and easier to explore, combining technical depth with real world usability. I’m also exploring machine learning use cases 
+          and model deployment through Shiny, which has strengthened both my programming skills and product-thinking mindset.
+        </p>
+
+        <p>
+          I’ll return to the University of Reading in September 2025 to complete my mathematics degree, where I’ve received the Departmental Achievement Award
+          in both first and second year for my academic performance, placing in the top 4 of my cohort in both years.
+        </p>
       </section>
 
-      <section class="experience">
+      <section id="education" class="card">
+        <h2>Education</h2>
+        <p><strong>BSc Mathematics, University of Reading</strong> Predicted First Class (Expected Graduation June 2026)</p>
+        <ul>
+          <li>Modules include: Mathematical and Statistical Programming, Linear Models and Data Analysis, Probability and Statistics, Mathematical Modelling</li>
+          <li>Recipient of the Departmental Achievement Award for top academic performance in both Year 1 and Year 2 (Top 4 in cohort each year)</li>
+        </ul>
+      </section>
+
+      <section id="experience" class="card">
         <h2>Experience</h2>
         <strong class="company-name">UCB Pharma</strong>
         <span class="time-frame" style="float: right;">August 2024 – Present</span>
         <p><i>Statistical Programming Placement Student</i></p>
         <ul>
-          <li>Built robust R functions to process and validate clinical trial datasets for baseline covariates, enabling consistent input preparation across multiple studies for use in matching-adjusted indirect comparisons (MAIC).</li>
-          <li>Contributed new features to internal R packages, including layout improvements for large tables and logic for binary variable validation, receiving positive team feedback for initiative and technical depth.</li>
+          <li>Built R functions to validate, process and analyse clinical trial datasets for baseline covariates, enabling consistent input preparation across multiple studies for use in matching-adjusted indirect comparisons (MAIC)
+        and supporting regulatory submissions.</li>
+          <li>Developed and iteratively improved a lightweight Shiny app in response to urgent stakeholder requests, used to communicate model behaviour to a non-technical audience.</li>
+          <li>Tested and documented internal R packages, refining features like binary variable validation and filtering input datasets to retain only required fields.</li>
           <li>Produced stakeholder-facing reports summarising technical evaluations of competing R packages, guiding stakeholders through our thought process.</li>
-          <li>Wrote documentation and vignettes for internal tools to support knowledge-sharing and improve reproducibility across teams.</li>
-          <li>Hosted and mentored first-year CS students during work shadowing sessions to introduce them to statistical programming in the pharmaceutical industry.</li>
+          <li>Hosted and mentored first-year university students during work shadowing sessions to introduce them to statistical programming in the pharmaceutical industry, including its purpose
+        and the tools used.</li>
+          <li>Collaborated within an Agile team structure, contributing to sprint planning, retrospectives, and delivery of statistical tools for clinical trial analysis.</li>
         </ul>
       </section>
 
-      <section class="skills">
+      <section id="skills" class="card">
         <h2>Skills</h2>
         <ul>
-          <li><strong>Languages & Tools:</strong> R, SQL, Git, R Shiny</li>
-          <li><strong>Data Science:</strong> Data wrangling, feature engineering, model evaluation, EDA, reproducible workflows</li>
-          <li><strong>Soft Skills:</strong> Communication, collaboration, stakeholder reporting, mentoring, <A></A>gile methodology</li>
+          <li><strong>Tech Stack:</strong>  Proficient in R and R Shiny; actively learning SQL and Python; exploring HTML, CSS, and JavaScript</li>
+          <li><strong>Soft Skills:</strong> Agile methodology, communication, collaboration, technical documentation writing and stakeholder reporting, mentoring</li>
         </ul>
       </section>
 
-      <section class="projects">
+      <section id="projects" class="card">
         <h2>Projects</h2>
-        <p><strong>Titanic SurvivR (R Shiny App)</strong> – An interactive application predicting Titanic survival using logistic regression and tree-based models. Built end-to-end with custom UI, feature selection, and model evaluation tools. <i>[Link coming soon]</i></p>
+        <p>
+          <a href="https://kaizera-dev.shinyapps.io/titanicshinysurvivr-app/"><strong>Titanic SurvivR (R Shiny App):</strong></a>
+          An end-to-end interactive application predicting Titanic survival using logistic regression and tree-based models. Built with custom UI components, dynamic user input features, data wrangling, feature engineering, EDA, and model evaluation tools.
+        </p>
       </section>
 
-      <section class="education">
-        <h2>Education</h2>
-        <p><strong>BSc Mathematics</strong>, University of Reading (Expected Graduation June 2026)</p>
-        <ul>
-          <li>First Class – Year 1 Average: 84%, Year 2 Average: 81%</li>
-          <li>Modules include: Mathematical and Statistical Programming, Linear Models and Data Analysis, Probability and Statistics</li>
-          <li>Recipient of the Departmental Achievement Award for top academic performance in both Year 1 and Year 2 (Top 4 in cohort each year)</li>
-        </ul>
-      </section>
-
-      <section class="philosophy">
-        <h2>Why “Kaizera”?</h2>
-        <p>“Kaizera” is a name I created by blending my surname, <strong>Kwizera</strong>—which connotes hope, belief, and faith—with the Japanese concept of <strong>Kaizen</strong>, which represents continuous self-improvement. It reflects how I approach data, career, and life: with intention, optimism, and iteration.</p>
-      </section>
-
-      <section class="contact">
+      <section id="contact" class="card">
         <h2>Contact Me</h2>
         <p>If you would like to get in touch, please feel free to connect with me on LinkedIn or reach out via email!</p>
         <div class="contact-icons">
           <a href="https://www.linkedin.com/in/alphonse-k-938a48298/" target="_blank" rel="noopener noreferrer">
             <i class="fa-brands fa-linkedin" style="font-size: 50px; color: white;"></i>
           </a>
-          <a href="mailto:a.kwizera@student.reading.ac.uk" target="_blank" rel="noopener noreferrer">
-            <i class="fa-solid fa-envelope" style="font-size: 50px; color: white;"></i>
+       
+          </a>
+          <a href="mailto:a.kwizera@student.reading.ac.uk" target="_blank" rel="noopener noreferrer"></a>
+        <i class="fa-solid fa-envelope" style="font-size: 50px; color: white;"></i>
           </a>
         </div>
       </section>
       
-      <section class="footer">
+      <section id="footer">
         <p style="text-align: center; color: white;">&copy; 2025 Alphonse Kwizera. All typos are A/B tests.</p>
       </section>
-      </div>
-      <script>
-        const nameText = "Alphonse Kwizera";
-        const roleText = "Statistical Programmer | BSc Mathematics Student";
-        const courseText = "University of Reading";
-        const scrollText = "Scroll (↓) for more";
-
-        const typeText = (element, text, delay = 0) => {
-          let i = 0;
-          const interval = setInterval(() => {
-        if (i < text.length) {
-          element.textContent += text[i];
-          i++;
-        } else {
-          clearInterval(interval);
-        }
-          }, delay);
-        };
-
-        document.addEventListener("DOMContentLoaded", () => {
-          const nameElement = document.querySelector(".name-text");
-          const roleElement = document.querySelector(".role-text");
-          const courseElement = document.querySelector(".course-text");
-          const scrollTextElement = document.querySelector(".scroll-text");
-
-          typeText(nameElement, nameText, 100);
-          setTimeout(() => typeText(roleElement, roleText, 100), nameText.length * 100 + 500);
-          setTimeout(() => typeText(courseElement, courseText, 100), (nameText.length + roleText.length) * 100 + 1000);
-          setTimeout(() => typeText(scrollTextElement, scrollText, 100), (nameText.length + roleText.length + courseText.length) * 100 + 1500);
-        });
-      </script>
+    </div>
   </body>
 </html>

@@ -51,25 +51,21 @@
         text-shadow: 2px 2px 4px rgba(0, 0, 170, 0.8);
       }
 
-      .about, 
-      .contact, 
-      .experience, 
-      .skills, 
-      .projects, 
-      .education, 
-      .philosophy  {
+      .card {
       background: #1a1a1a;
       color: #f0f0f0;
       margin: auto;
-      padding: 40px 40px;
+      padding: 30px 40px;
       box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
       max-width: 1000px;
       border-radius: 10px;
       border: 20px;
-      margin-top: 20px;
-      margin-bottom: 20px;}
+      margin-top: 40px;
+      margin-bottom: 40px;
+      transition: all 0.3s ease;
+    }
 
-      .about h2, .contact h2, .experience h2 {
+      .card h2 {
         font-size: 2em;
         margin-bottom: 20px;
         text-align: center;
@@ -93,22 +89,32 @@
         margin: 0 15px; 
       }
 
+      a {
+        text-decoration: none;
+        color: lightblue;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+
+      .contact-icons img {
+        width: 30px; 
+        height: 30px; 
+        transition: transform 0.3s;
+      }
+      
+      
+      .card:hover {
+        transform: translateY(-13px);
+        transition: all 0.3s ease;
+      }
+
       .scroll-text{
   animation: pulse 1s infinite;
       }
 
-.skills h2, .projects h2, .education h2, .philosophy h2 {
-  font-size: 2em;
-  margin-bottom: 20px;
-  text-align: center;
-  color: #ffffff;
-}
-
-.skills ul, .education ul {
+.card ul {
   padding-left: 20px;
   list-style-type: square;
-}
-
-.projects p {
-  margin-bottom: 1.2em;
 }
