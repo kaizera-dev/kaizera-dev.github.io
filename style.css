@@ -269,7 +269,6 @@ nav a:hover::after {
 .skill-card:hover {
   transform: translateY(-10px);
   box-shadow: 0 6px 15px rgba(0, 0, 0, 0.3);
-  color: #D1AFFF; /* Change text color on hover */
 }
 
 .skill-card h3 {
@@ -280,7 +279,7 @@ nav a:hover::after {
 }
 
 .skill-card:hover h3 {
-  color: inherit; /* Inherit color from the card on hover */
+  color: #D1AFFF; 
 }
 
 .skill-card ul {
