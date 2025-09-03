@@ -362,13 +362,24 @@ nav a:hover::after {
   text-align: left;
 }
 
+
 .tech-stack {
-  display: grid;
-  grid-template-columns: repeat(8, 1fr);
-  gap: 20px;
-  font-size: 2.5rem;
-  justify-items: center;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
+  justify-content: center;
   align-items: center;
+}
+
+.tech-stack i {
+  font-size: 2.2em;
+  flex: 0 0 auto;
+}
+
+@media (max-width: 600px) {
+  .tech-stack i {
+    font-size: 1.4em;
+  }
 }
 
 .tech-stack i {
