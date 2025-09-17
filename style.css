@@ -1,15 +1,4 @@
-body::before {
-  content: "";
-  position: fixed;
-  top: 0;
-  left: 0;
-  width: 100vw;
-  height: 100vh;
-  background: url('assets/stars.png') no-repeat center center fixed;
-  background-size: cover;
-  opacity: 0.9;
-  z-index: -1;
-}
+
 @keyframes fadeUp {
   to {
     opacity: 1;
@@ -29,7 +18,6 @@ html {
     left: 0;
     width: 100vw;
     height: 100vh;
-    background: url('assets/stars.png') no-repeat center center fixed;
     background-size: cover;
     opacity: 0;
     z-index: 0;
@@ -146,7 +134,7 @@ html {
         margin: auto;
         padding: 30px 40px;
         box-shadow: 0 6px 24px 0 rgba(123, 97, 255, 0.15), 0 1.5px 8px 0 rgba(0,0,0,0.18);
-        max-width: 800px;
+        max-width: 1000px;
         border-radius: 16px;
         border-left: 6px solid #9b61ff;
         margin-top: 40px;
@@ -214,11 +202,12 @@ html {
         align-items: center;
         text-decoration: none;
         color: white;
-        transition: transform 0.3s ease, color 0.3s ease;
+        transform-origin: center;
+        transition: transform 0.3s ease-in-out, color 0.3s ease;
       }
 
       .contact-icons a:hover {
-        transform: translateY(-10px);
+        transform: scale(1.2);
         color: #D1AFFF;
       }
 
@@ -226,11 +215,13 @@ html {
         margin-top: 5px;
         font-size: 14px;
         color: white;
-        transition: color 0.3s ease;
+        opacity: 0.8;
+        transition: opacity 0.3s ease, color 0.3s ease;
       }
 
       .contact-icons a:hover span {
         color: #D1AFFF;
+        opacity: 1;
       }
 
       a {
@@ -244,10 +235,12 @@ html {
       }
       
 
-      .contact-icons img {
-        width: 30px; 
-        height: 30px; 
-        transition: transform 0.3s;
+      .contact-icons i {
+        transition: transform 0.3s ease-in-out;
+      }
+
+      .contact-icons a:hover i {
+        transform: scale(1.1);
       }
       
       
@@ -335,7 +328,7 @@ nav a:hover::after {
   padding: 20px;
   border-radius: 10px;
   box-shadow: 0 4px 10px rgba(0, 0, 0, 0.2);
-  max-width: 300px;
+  max-width: 800px;
   text-align: center;
   transition: transform 0.3s ease, box-shadow 0.3s ease;
 }
@@ -371,14 +364,31 @@ nav a:hover::after {
   align-items: center;
 }
 
+.tech-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 8px;
+  text-align: center;
+}
+
 .tech-stack i {
   font-size: 2.2em;
   flex: 0 0 auto;
 }
 
+.tech-level {
+  font-size: 0.8em;
+  opacity: 0.7;
+  font-style: italic;
+}
+
 @media (max-width: 600px) {
   .tech-stack i {
     font-size: 1.4em;
+  }
+  .tech-level {
+    font-size: 0.7em;
   }
 }
 
